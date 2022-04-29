@@ -1,0 +1,18 @@
+<section class="d-flex justfiy-content-around flex-wrap">
+    <div class="card mx-auto my-2 rounded" style="width: 18rem;" *ngFor="let p of personagens">
+        <img class="card-img-top" [src]="p.image" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Nome: {{p.name}}</h5>
+          <p class="card-text">Espécie: {{p.species}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-italic">Status: {{p.status}}</li>
+          <li class="list-group-item">Gênero: {{p.gender}}</li>
+          <li class="list-group-item">ID: {{p.id}}</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Link do card</a>
+          <a href="#" class="card-link">Outro link</a>
+        </div>
+      </div>
+</section>
